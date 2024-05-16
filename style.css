@@ -1,0 +1,181 @@
+main {
+  width: 90%;
+  margin: 100px auto;
+  border: 5px solid maroon;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  border-radius: 20px;
+  background-color: black;
+  /*background-color: lightgray;*/
+  opacity: 0.9;
+}
+
+body {
+  background-image: url("kepek/hatter-auto.avif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: lightgray;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 50px;
+  text-decoration: overline;
+  color: lightgray;
+}
+
+.nav {
+  padding-left: 50px;
+}
+
+.oldalcim {
+  color: gray;
+}
+
+.oldalcim:hover {
+  color: lightgray;
+}
+
+.menupontok {
+  color: lightgray;
+}
+
+.menupontok:hover {
+  color: red;
+}
+
+.menupontAdmin {
+  color: gray;
+}
+
+.menupontAdmin:hover {
+  color: darkred;
+}
+
+.aktiv {
+  color: red;
+}
+
+.elerhetoseg {
+  color: gray;
+}
+
+.elerhetoseg:hover {
+  color: lightgray;
+}
+
+.padding {
+  padding-right: 10px;
+}
+
+header {
+  padding-top: 50px;
+}
+
+.hastag {
+  color: red;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+}
+
+h6 {
+  color: lightgray;
+  text-align: center;
+  text-decoration: overline;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.ajandekkartya {
+  font-family: 'Times New Roman', Times, serif;
+  color: lightgray;
+}
+
+section {
+  border: 5px solid maroon;
+  border-radius: 15px;
+}
+
+.section-szurok {
+  width: 90%;
+  margin: 100px auto;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card {
+  border: 1px solid gray;
+}
+
+.alapar {
+  text-decoration: none;
+  color: lightgray;
+}
+
+span {
+  color: red;
+  font-weight: bold;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.termekinformacio {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.h6 {
+  text-decoration: none;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.article-padding {
+  padding-left: 120px;
+}
+
+.elektromos-text {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+}
+
+.form {
+  width: 80%;
+  margin: 100px auto;
+  border: 1px solid gray;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.urlap {
+  color: lightgray;
+}
+
+.table {
+  border: 1px solid gray;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabu András - Webáruház</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/167a7b748c.js" crossorigin="anonymous"></script>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main>
+        <hr />
+        <nav class="navbar navbar-expand-sm navbar-dark border-secondary rounded-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="kepek/logo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+                </a>
+                <a class="navbar-brand oldalcim" href="index.html">Mercedes-Benz<br>Webáruház</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto nav">
+                        <li class="nav-item padding">
+                            <a class="nav-link menupontok" href="index.html"><i class="fa fa-home"></i>
+                                Főoldal</a>
+                        </li>
+                        <li class="nav-item padding">
+                            <a class="nav-link menupontok aktiv" href="termekek.html"><i class="fa fa-car"></i>
+                                Modellek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menupontok" href="szemelyes-adatok.html"><i class="fa-solid fa-user"></i>
+                                Személyes
+                                adatok</a>
+                        </li>
+                    </ul>
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item padding">
+                            <a class="nav-link menupontok" href="kosar.html"><i class="fa fa-shopping-basket"></i>
+                                Kosár</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menupontAdmin" href="admin.html"><i class="fa-solid fa-lock"></i>
+                                Admin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr />
+        <header>
+            <h3><i class="fa fa-hashtag text_red hastag"></i>Modellek</h3>
+            <h6>Válassz <span class="text-uppercase">Elektromos</span> és <span class="text-uppercase">Plug-in
+                    hybrid</span> autóink közül!</h6>
+        </header>
+        <section class="section-szurok">
+            <div class="szuro">
+                <form class="was-validated">
+                    <p class="urlap">Szűrés <span>Név</span> alapján:</p>
+                    <div class="mb-3 mt-3">
+                        <input type="text" class="form-control bg-dark text-white" id="sznev" required name="sznev">
+                        <div class="invalid-feedback">Például: EQA - Mercedes</div>
+                    </div>
+                </form>
+            </div>
+            <div class="szuro2">
+                <form class="was-validated">
+                    <p class="urlap">Szűrés <span>Ár</span> alapján:</p>
+                    <div class="mb-3 mt-3">
+                        <input type="number" class="form-control bg-dark text-white" id="szar" required min="16"
+                            max="33" name="szar">
+                        <div class="valid-feedback">Ok.</div>
+                        <div class="invalid-feedback">Megjegyzés: 16 = 16 millió Ft</div>
+                        <div class="invalid-feedback">16-33 között írhatsz.</div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="adatok"></div>
+        <footer>
+            <p>
+                Fabu András<br />
+                <a href="https://github.com/fabuandras" style="font-size: 24px" class="elerhetoseg"><i
+                        class="fa fa-github" style="font-size: 24px"></i></a>
+                <!--<a href="https://discord.com/channels/@strapex"
+          style="font-size: 24px; padding-left: 15px;" class="a"><i class="fa-brands fa-discord"
+            style="font-size: 24px"></i></a>-->
+            </p>
+        </footer>
+    </main>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--
+        </header>
+        <h6 class="text-uppercase elektromos-text pt-5">Elektromos</h6>
+        <div class="container pt-5">
+            <div class="row">
+                <article class="col-md-12 row article-padding">
+                    <div class="col-md-4 row">
+                        <div class="card bg-dark" style="width:300px">
+                            <img class="card-img-top" src="kepek/EQA.webp" alt="EQA - Mercedes" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title text-white">EQA - Mercedes</h4>
+                                <p class="card-text alapar">Alapár: <span>22 788 000,00 Ft</span></p>
+                                <h6 class="card-title text-white h6">Termékinformáció:</h6>
+                                <p class="card-text text-white termekinformacio">tisztán elektromos
+                                    hatótávolság: Max.
+                                    560 km.<br>
+                                    Szín: fekete<br>
+                                    Áramfogyasztás: kWh/100 km (kombinált): 19,7
+                                </p>
+                                <div class="text-right pt-3">
+                                    <a href="#" class="btn btn-outline-light fw-bold rounded-3 text-uppercase"><i
+                                            class="fa fa-shopping-cart"></i> Kosárba</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 row">
+                        <div class="card bg-dark" style="width:300px">
+                            <img class="card-img-top" src="kepek/EQB.webp" alt="EQB - Mercedes" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title text-white">EQB - Mercedes</h4>
+                                <p class="card-text alapar">Alapár: <span>23 748 000,00 Ft</span></p>
+                                <h6 class="card-title text-white h6">Termékinformáció:</h6>
+                                <p class="card-text text-white termekinformacio">Teljesen elektromos
+                                    hatótávolság: Max.
+                                    536 km.<br>
+                                    Szín: fekete<br>
+                                    Áramfogyasztás: kWh/100 km (kombinált): 19,7
+                                </p>
+                                <div class="text-right pt-3">
+                                    <a href="#" class="btn btn-outline-light fw-bold rounded-3 text-uppercase"><i
+                                            class="fa fa-shopping-cart"></i> Kosárba</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 row">
+                        <div class="card bg-dark" style="width:300px">
+                            <img class="card-img-top" src="kepek/EQE-SUV.webp" alt="EQE-SUV - Mercedes"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title text-white">EQE-SUV - Mercedes</h4>
+                                <p class="card-text alapar">Alapár: <span>33 856 000,36 Ft</span></p>
+                                <h6 class="card-title text-white h6">Termékinformáció:</h6>
+                                <p class="card-text text-white termekinformacio">Teljesen elektromos
+                                    hatótávolság: Max.
+                                    596 km.<br>
+                                    Szín: fekete<br>
+                                    Áramfogyasztás: kWh/100 km (kombinált): 19,7
+                                </p>
+                                <div class="text-right pt-3">
+                                    <a href="#" class="btn btn-outline-light fw-bold rounded-3 text-uppercase"><i
+                                            class="fa fa-shopping-cart"></i> Kosárba</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <h6 class="text-uppercase elektromos-text pt-5">Plug-in hybrid</h6>
+        <div class="container pt-5">
+            <div class="row">
+                <article class="col-md-12 row article-padding">
+                    <div class="col-md-4 row">
+                        <div class="card bg-dark" style="width:300px">
+                            <img class="card-img-top" src="kepek/GLA.webp" alt="GLA - Mercedes" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title text-white">GLA - Mercedes</h4>
+                                <p class="card-text alapar">Alapár: <span>16 102 000,00 Ft</span></p>
+                                <h6 class="card-title text-white h6">Termékinformáció:</h6>
+                                <p class="card-text text-white termekinformacio">Névleges teljesítmény:
+                                    akár 165 kW / LE<br>
+                                    Szín: fekete<br>
+                                    Gyorsulás: 6,8 mp alatt 0-ról 100 km/h-ra.
+                                </p>
+                                <div class="text-right pt-3">
+                                    <a href="#" class="btn btn-outline-light fw-bold rounded-3 text-uppercase"><i
+                                            class="fa fa-shopping-cart"></i> Kosárba</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 row">
+                        <div class="card bg-dark" style="width:300px">
+                            <img class="card-img-top" src="kepek/GLC.webp" alt="GLC - Mercedes" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title text-white">GLC - Mercedes</h4>
+                                <p class="card-text alapar">Alapár: <span>21 541 000,00 Ft</span></p>
+                                <h6 class="card-title text-white h6">Termékinformáció:</h6>
+                                <p class="card-text text-white termekinformacio">Névleges teljesítmény:
+                                    145/197 kW/LE<br>
+                                    Szín: fekete<br>
+                                    Max. 5 ülés a belső térben.
+                                </p>
+                                <div class="text-right pt-3">
+                                    <a href="#" class="btn btn-outline-light fw-bold rounded-3 text-uppercase"><i
+                                            class="fa fa-shopping-cart"></i> Kosárba</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 row">
+                        <div class="card bg-dark" style="width:300px">
+                            <img class="card-img-top" src="kepek/GLC-COUPE.webp" alt="GLC-COUPE - Mercedes"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title text-white">GLC-Coupé - Mercedes</h4>
+                                <p class="card-text alapar">Alapár: <span>24 453 000,00 Ft</span></p>
+                                <h6 class="card-title text-white h6">Termékinformáció:</h6>
+                                <p class="card-text text-white termekinformacio">Névleges teljesítmény:
+                                    max. 198/269 kW/LE<br>
+                                    Szín: fekete<br>
+                                    Max. 5 ülés a belső térben
+                                </p>
+                                <div class="text-right pt-3">
+                                    <a href="#" class="btn btn-outline-light fw-bold rounded-3 text-uppercase"><i
+                                            class="fa fa-shopping-cart"></i> Kosárba</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>-->
